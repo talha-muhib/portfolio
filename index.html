@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Personal Portfolio - Talha Muhib</title>
+        
+        <!--Box icons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--Header design-->
+        <header class="header">
+            <a class = "logo" href = "#">Portfolio</a>
+            <box-icon name='menu' id = "menu-icon"></box-icon>
+
+            <nav class = "navbar">
+                <a href = "#home" class = "active">Home</a>
+                <a href = "#education">Education</a>
+                <a href = "#experience">Experience</a>
+                <a href = "#skills">Skills</a>
+                <a href = "#projects">Projects</a>
+                <a href = "#interests">Interests</a>
+            </nav>
+        </header>
+
+        <!--Home section-->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>TALHA MUHIB</h3>
+                <h6>RECENT GRADUATE FROM UNIVERSITY OF MARYLAND</h6>
+                <div class="basic-info">
+                    <h4>B.S. in Computer Science with a good understanding of:</h4>
+                    <ul> 
+                        <li>Data structures: KD Trees, AVL Trees, Bloom Filters, Union-Find, etc.</li>
+                        <li>Programming languages and software design</li>
+                        <li>Algorithm design and optimization: Dynamic programming, network flows, NP-completeness, etc.</li>
+                        <li>Combinatorics and graph theory</li>
+                    </ul>
+                </div>
+                
+                <div class="social-media">
+                    <a href="https://github.com/talha-muhib" target = "_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/tmuhib/" target = "_blank"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+
+                <!--<a href = "#" class = "btn">Download CV</a>-->
+            </div>
+
+            <div class = "home-img">
+                <img id = "pfp" src = "profile-pic.jpg" alt = "" width = 375 height = 500>
+            </div>
+        </section>
+
+        <!--Education section-->
+        <section class="education" id="education">
+            <h2 class = "heading">EDUCATION</h2>
+            <div class="umd">
+                <div class="umd-info">
+                    <h3>UNIVERSITY OF MARYLAND, COLLEGE PARK</h3>
+                    <h4>BACHELOR OF SCIENCE</h4>
+                    <p>Computer Science with Upper Concentration in Astronomy. GPA: 3.45 / 4.0</p>
+                </div>
+
+                <div class="umd-date">
+                    <h3>Jan 2020 - Dec 2022</h3>
+                </div>
+            </div>
+
+            <div class="pgcc">
+                <div class="pgcc-info">
+                    <h3>PRINCE GEROGE'S COMMUNITY COLLEGE</h3>
+                    <h4>A.A. IN GENERAL STUDIES</h4>
+                    <p>Graduated with Honors in December 2019. GPA: 3.9 / 4.0</p>
+                </div>
+
+                <div class="pgcc-date">
+                    <h3>Fall 2017 - Fall 2019</h3>
+                </div>
+            </div>
+        </section>
+
+        <!--Experience section-->
+        <section class="experience" id="experience">
+            <h2 class = "heading">EXPERIENCE</h2>
+            <div class="carsxe">
+                <h3>SOFTWARE ENGINEERING INTERN</h3>
+                <h4>CARSXE API: JUN 2022 - AUG 2022</h4>
+                <ul> 
+                    <li>Collaborated with 3 software developers to construct tools to provide vehicle
+                        <br>specs/history, market value, and license plate decoding via an API. </li>
+                    <li>Used machine learning tools such as OpenCV, TensorFlow, and brain.js
+                        <br>to construct models to identify cars by their license plates.</li>
+                    <li>Developed a subscription cancellation workflow using Firebase for customer
+                        <br>information retrieval and the Stripe API for customer subscription modification.</li>
+                </ul>
+            </div>
+            <div class="ta">
+                <h3>UNDERGRADUATE TEACHING ASSISTANT</h3>
+                <h4>UNIVERSITY OF MARYLAND: AUG 2022 - DEC 2022</h4>
+                <ul> 
+                    <li>Assisted a class of 280 students in learning and understanding circuits,
+                        <br>proofs, countability, probability, and combinatorics.</li>
+                    <li>Held office hours and discussion sessions twice a week to help students 
+                        <br> understand homework problems, review for exams, and learn the new materials.</li>
+                    <li>Assisted the professor with grading all quizzes and exams.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Skills section-->
+        <section class="skills" id="skills">
+            <h2 class = "heading">SKILLS</h2>
+            <div class="programming">
+                <h3>PROGRAMMING LANGUAGES</h3>
+                <h4>Python, Java, OCaml, Ruby, C, Racket, MATLAB, MIPS Assembly, a86/x86 Assembly, Rust, HTML, CSS, Vue.js</h4>
+            </div>
+            <div class="tools">
+                <h3>SOFTWARE TOOLS</h3>
+                <ul> 
+                    <li>Eclipse</li>
+                    <li>Emacs</li>
+                    <li>IntelliJ IDEA</li>
+                    <li>DrRacket</li>
+                    <li>Git/GitHub</li>
+                    <li>Shell scripting</li>
+                    <li>Python scripting</li>
+                </ul>
+            </div>
+            <div class="speaking">
+                <h3>SPEAKING LANGUAGES</h3>
+                <h4>English, Bangla</h4>
+            </div>
+        </section>
+
+        <!--Projects section-->
+        <section class="projects" id="projects">
+            <h2 class = "heading">PROJECTS</h2>
+
+            
+        </section>
+
+        <!--Interests section-->
+        <section class="interests" id="interests">
+            <h2 class = "heading">INTERESTS</h2>
+            <p>There are many topics that interest me, but two of them are<br>
+                programming language (PL) designs and algorithm optimization.
+
+                <br><br>
+                <strong>PROGRAMMING LANGUAGE DESIGNS:</strong><br>
+                I've done several projects where I've implemented small langauges or added more features to a language.
+                I wrote interpreters and compilers for features such as multiple return values, or function calls with rest parameters.<br><br>
+                I also have some experience with the theoretical side of PL design, such as finite state machines, which are mathematical
+                computations used to simulate sequential logic, and lambda calculus, a formal system for simulating function application.
+                <br><br>
+
+                <strong>ALGORITHM DESIGN & OPTIMIZATION:</strong><br>
+                Although one of the hardest topics for me to understand, I am most fascinated by this area.
+                I was first exposed to the P vs. NP problem in my "Intro to Algorithms" class, and the idea of
+                an entire class of problems being solvable in polynomial time with non-deterministic algorithms was
+                extremely intriguing. I also took an advanced algorithms class, where I learned about concepts such as
+                dynamic programming, network flows, NP reductions and NP-completeness, and approximation algorithms.
+            </p>
+        </section>
+
+        <!--Custom JS-->
+        <script src = "script.js"></script>
+    </body>
+
+</html>
