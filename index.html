@@ -139,15 +139,48 @@
         <!--Projects section-->
         <section class="projects" id="projects">
             <h2 class = "heading">PROJECTS</h2>
-            <h3>WILL ADD SOON</h3>
+            <h3>I've done almost 50 programming projects as an undergraduate CS student.
+                I can't discuss all of them but here are a few that stand out to me.</h3>
             <div class="return-values">
-
+                <h3>MULTIPLE RETURN VALUES - RACKET</h3>
+                <p>Implemented Racket’s “let-values” and “values”
+                    forms to add multiple return values in a subset of the Racket language called Iniquity.</p>
+                <ul> 
+                    <li>Extended the current parser and compiler to evaluate S-expression inputs to an 
+                        abstract syntax tree and then convert it to x86 Assembly.</li>
+                    <li>Updated the runtime system, which was done in C, to unwrap the executed x86 result and
+                            print the values to the terminal based on Racket specifications.</li>
+                </ul>
             </div>
             <div class="micro">
-
+                <h3>MICROCAML LEXER, PARSER, INTERPRETER</h3>
+                <p>Implemented MicroCaml, a functional programming
+                    language loosely based on the OCaml language, along with mutop, a REPL environment for MicroCaml.</p>
+                <ul> 
+                    <li>Used OCaml regular expressions to tokenize MicroCaml expressions and mutop directives.</li>
+                    <li>Implemented a MicroCaml parser and interpreter to evaluate tokenized input to an AST
+                        and then a result based on a language specification modeled by a Context Free Grammar.</li>
+                    <li>Developed a REPL (mutop) to enable quickly evaluating expressions with persisting memory.</li>
+                </ul>
             </div>
             <div class="kd">
-
+                <h3>HEIGHT-BALANCED KD-TREES</h3>
+                <p>The KD-tree is a binary tree representation of multi-dimensional data structures like
+                    quad-trees. This project involved implementing a height-balanced variant of the standard KD-tree.
+                    The rebalancing is done by rebuilding the subtree with the height imbalance, since the cutting
+                    dimensions can be affected.
+                </p>
+                <ul> 
+                    <li>Insert operation inserts a k-dimensional point into the tree and rebalances if necessary.</li>
+                    <li>Delete operation deletes a kd point and rebalances if necessary.</li>
+                    <li>Search operation will look for a kd point and return it if it exists in the tree.
+                        Otherwise it will throw an exception.
+                    </li>
+                    <li>Nearest neighbor query: Given a point <strong>p</strong> that necessarily may not exist 
+                        in the tree, this query uses the Pythagorean distance formula to find the closest point
+                        to <strong>p</strong> and return that point.
+                    </li>
+                </ul>
             </div>
             <div class="orders">
 
@@ -178,6 +211,8 @@
                 extremely intriguing. I also took an advanced algorithms class, where I learned about concepts such as
                 dynamic programming, network flows, NP reductions and NP-completeness, and approximation algorithms.
             </p>
+
+            <a href = "#home"><i class='bx bx-up-arrow-alt' ></i></a>
         </section>
 
         <!--Custom JS-->

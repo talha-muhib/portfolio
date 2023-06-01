@@ -110,6 +110,7 @@ section {
 
 #pfp {
     border-radius: 50%;
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 .social-media a {
@@ -130,23 +131,6 @@ section {
 .social-media a:hover {
     background: var(--main-color);
     color: var(--second-bg-color);
-    box-shadow: 0 0 1rem var(--main-color);
-}
-
-.btn {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--main-color);
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    color: var(--second-bg-color);
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: .5s;
-    box-shadow: none;
-}
-
-.btn:hover {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
@@ -331,6 +315,32 @@ section {
     color: var(--main-color);
 }
 
+.projects h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 1rem 0 0 0;
+}
+
+.projects div h3 {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.projects p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.projects ul li {
+    margin: 1rem 0 0 1.5rem;
+    font-size: 1.2rem;
+}
+
+.projects div {
+    margin: 4rem 0 0 0;
+}
+
 .interests h2 {
     font-size: 4.5rem;
     font-weight: 800;
@@ -346,30 +356,52 @@ section {
     color: var(--main-color);
 }
 
-/*SIZE ADJUSTMENTS*/
-@media (max-width: 1200px) {
-    html {
-        font-size: 55%;
-    }
+.interests a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s;
 }
 
+.interests a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/*SIZE ADJUSTMENTS*/
 @media (max-width: 990px) {
     .header {
         padding: 2rem 3%;
     }
 
-     section {
+    section {
         padding: 10rem 3% 2rem;
-     }
+    }
+
+    .home-img img {
+        width: 300px;
+        height: 400px;
+    }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
     #menu-icon {
         display: block;
+        transition: .5s;
     }
 
     #menu-icon:hover {
         cursor: pointer;
+        color: var(--main-color);
     }
 
     .navbar {
@@ -395,12 +427,7 @@ section {
         margin: 3rem 0;
     }
 
-    .home-img img {
-        width: 225px;
-        height: 300px;
-    }
-
-    .home {
-        flex-direction: column-reverse;
+    .home-img {
+        display: none;
     }
 }
