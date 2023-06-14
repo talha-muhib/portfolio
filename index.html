@@ -39,6 +39,7 @@
                         <li>Programming languages and software design</li>
                         <li>Algorithm design and optimization: Dynamic programming, network flows, NP-completeness, etc.</li>
                         <li>Combinatorics and graph theory</li>
+                        <li>Information-theoretic security and computational security</li>
                     </ul>
                 </div>
                 
@@ -46,8 +47,6 @@
                     <a href="https://github.com/talha-muhib" target = "_blank"><i class='bx bxl-github' ></i></a>
                     <a href="https://www.linkedin.com/in/tmuhib/" target = "_blank"><i class='bx bxl-linkedin' ></i></a>
                 </div>
-
-                <!--<a href = "#" class = "btn">Download CV</a>-->
             </div>
 
             <div class = "home-img">
@@ -90,12 +89,13 @@
                 <h3>SOFTWARE ENGINEERING INTERN</h3>
                 <h4>CARSXE API: JUN 2022 - AUG 2022</h4>
                 <ul> 
-                    <li>Collaborated with 3 software developers to construct tools to provide vehicle
-                        specs/history, market value, and license plate decoding via an API. </li>
-                    <li>Used machine learning tools such as OpenCV, TensorFlow, and brain.js
-                        to construct models to identify cars by their license plates.</li>
-                    <li>Developed a subscription cancellation workflow using Firebase for customer
-                        information retrieval and the Stripe API for customer subscription modification.</li>
+                    <li>Used Vue.js to rewrite the entire documentation page and make it mobile-friendly for customers.</li>
+                    <li>Created a subscription cancellation feature which allows customers to request subscription
+                        cancellation from the website itself, thus eliminating manually cancelling subscriptions from the server side.</li>
+                    <li>Developed the cancellation workflow using Firebase for customer
+                        information retrieval and Stripe for customer subscription modification.</li>
+                    <li>Collaborated with 2 other interns and constructed models using ML
+                        tools such as brain.js and TensorFlow to identify cars by their license plates.</li>
                 </ul>
             </div>
             <div class="ta">
@@ -104,9 +104,10 @@
                 <ul> 
                     <li>Assisted a class of 280 students in learning and understanding circuits,
                         proofs, countability, probability, and combinatorics.</li>
-                    <li>Held office hours and discussion sessions twice a week to help students 
-                        understand homework problems, review for exams, and learn the new materials.</li>
-                    <li>Assisted the professor with grading all quizzes and exams.</li>
+                    <li>Assisted Dr. Teli with designing and grading all quizzes and exams.</li>
+                    <li>Held weekly lab sessions with 38 assigned students and daily office hours to help with homework and exam review.</li>
+                    <li>34/38 students passed at the end of the semester with
+                        8 As, 13 Bs, and 13 Cs. 3 students became TAs for the same class the following semester.</li>
                 </ul>
             </div>
         </section>
@@ -116,7 +117,7 @@
             <h2 class = "heading">SKILLS</h2>
             <div class="programming">
                 <h3>PROGRAMMING LANGUAGES</h3>
-                <h4>Python, Java, OCaml, Ruby, C, Racket, MATLAB, MIPS Assembly, a86/x86 Assembly, Rust, HTML, CSS, Vue</h4>
+                <h4>Python, Java, OCaml, Ruby, C, Racket, MATLAB, MIPS Assembly, a86/x86 Assembly, Rust, HTML, CSS, Vue.js</h4>
             </div>
             <div class="tools">
                 <h3>SOFTWARE TOOLS</h3>
@@ -125,12 +126,12 @@
                     <li>Visual Studio Code</li>
                     <li>DrRacket</li>
                     <li>Emacs</li>
-                    <li>IntelliJ IDEA</li>
-                    <li>Git/GitHub</li>
+                    <li>Git/GitHub (CI/CD pipeline, project management tools)</li>
                     <li>Shell scripting</li>
                     <li>Python scripting</li>
-                    <li>Software Development Lifecycle</li>
+                    <li>SDLC</li>
                     <li>Debugging</li>
+                    <li>Data Structures & Algorithms</li>
                 </ul>
             </div>
             <div class="speaking">
@@ -143,7 +144,7 @@
         <section class="projects" id="projects">
             <h2 class = "heading">PROJECTS</h2>
             <h3>I've done over 50 programming projects as an undergraduate CS student.
-                Here are just a few of them that stand out to me.</h3>
+                Here are just a few of them that stand out to me. I cannot share the source code here due to academic integrity.</h3>
             <div class="return-values">
                 <h3>RACKET MULTIPLE RETURN VALUES</h3>
                 <p>Implemented Racket’s “let-values” and “values”
@@ -170,20 +171,19 @@
                 <h3>HEIGHT-BALANCED KD-TREES</h3>
                 <p>The KD-tree is a binary tree representation of multi-dimensional data structures like
                     quad-trees. This project involved implementing a height-balanced variant of the standard KD-tree in Java.
-                    The rebalancing is done by rebuilding the subtree with the height imbalance, since the cutting
-                    dimensions can be affected.
+                    The rebalancing is done by destroying the subtree with the height imbalance, and then rebuilding it.
                 </p>
                 <ul> 
                     <li>Insert operation inserts a k-dimensional point into the tree and rebalances if necessary.</li>
-                    <li>Delete operation deletes a kd point and rebalances if necessary.</li>
-                    <li>Search operation will look for a kd point and return it if it exists in the tree.
+                    <li>Delete operation deletes a KD point and rebalances if necessary.</li>
+                    <li>Search operation will look for a KD point and return it if it exists in the tree.
                         Otherwise it will throw an exception.
                     </li>
                     <li>Nearest neighbor query: Given a point <strong>p</strong> that necessarily may not exist 
                         in the tree, this query uses the Pythagorean distance formula to find the closest point
                         to <strong>p</strong> and return that point.
                     </li>
-                    <li>Range query: Given a bounding box, this query returns all the points which are inside the box.</li>
+                    <li>Range query: Given a KD bounding box, this query returns all the points which are located inside the box.</li>
                 </ul>
             </div>
             <div class="orders">
@@ -195,18 +195,19 @@
                 </p>
             </div>
             <div class="pacman">
-                <h3>PACMAN</h3>
-                <p>Designed agents for the classic pacman game in Python. The structure of the project is divided into two main parts.</p>
+                <h3>MULTI-AGENT PACMAN</h3>
+                <p>Designed adversarial agents for the classic pacman game in Python. The structure of the project is divided into two main parts.</p>
                 <ul> 
                     <li>Improved the evaluation function for Pacman as a reflex agent to eat as many
-                        food pellets as possible before getting attacked by ghosts.
+                        food pellets as possible before getting killed by ghosts.
                     </li>
                     <li>Implemented adversarial multi-agents using algorithms like minimax, alpha-beta pruning, and expectimax.</li>
                 </ul>
             </div>
             <div class="sorting">
                 <h3>IN-PLACE SORTING ALGORITHM VISUALIZER (In Progress)</h3>
-                <p>Used Pygame to design a visualizer for some in-place sorting algorithms. Credit to Tech With Tim for the amazing Pygame tutorial.</p>
+                <p>Used Pygame to design a visualizer for some in-place sorting algorithms, such as bubble sort, insertion sort, and selection sort. 
+                    Credit to Tech With Tim for the amazing Pygame tutorial.</p>
             </div>
         </section>
 
