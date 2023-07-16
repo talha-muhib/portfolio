@@ -145,6 +145,18 @@
             <h2 class = "heading">PROJECTS</h2>
             <h3>I've done over 50 programming projects as an undergraduate CS student.
                 Here are just a few of them that stand out to me. For a lot of these projects, I cannot share the source code here due to academic integrity.</h3>
+            <div class="bloom">
+                <h3>BLOOM FILTER</h3>
+                <p>Constructed a Bloom Filter to manage the recording of passwords which have experienced hacking attempts.</p>
+                <ul> 
+                    <li>The tracefile initializes a Bloom Filter and contains a record of usernames which have experienced hacking attempts. 
+                        If the number of attempts exceeds the threshold, the username should be stored in the Bloom Filter 
+                        (If the user attempts to log in again with the same username, a warning is given).</li>
+                    <li>The Bloom Filter is initialized with the following parameters: <strong>m</strong> (number of bits in the Bloom Filter), 
+                        <strong>k</strong> (Number of hash functions), <strong>threshold</strong> (max hacking attempts), 
+                        <strong>fpmax</strong> (max acceptable probability of a false positive before the Bloom Filter is rebuilt).</li>
+                </ul>
+            </div>
             <div class="return-values">
                 <h3>RACKET MULTIPLE RETURN VALUES</h3>
                 <p>Implemented Racket’s “let-values” and “values”
@@ -185,14 +197,6 @@
                     </li>
                     <li>Range query: Given a KD bounding box, this query returns all the points which are located inside the box.</li>
                 </ul>
-            </div>
-            <div class="orders">
-                <h3>ORDERS PROCESSOR</h3>
-                <p>Given a file with a list of items, a list of clients and their items of request, this project involved
-                    implementing a system using Java's multi-threading to allow clients to buy items if they were still
-                    in stock. The same system was implemented using single-threading to compare the processing speed
-                    of both implementations. 
-                </p>
             </div>
             <div class="pacman">
                 <h3>MULTI-AGENT PACMAN</h3>
