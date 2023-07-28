@@ -341,22 +341,7 @@ section {
     margin: 4rem 0 0 0;
 }
 
-.interests h2 {
-    font-size: 4.5rem;
-    font-weight: 800;
-    color: var(--main-color);
-}
-
-.interests p {
-    font-size: 1.5rem;
-    margin: 1.5rem 0 0 0;
-}
-
-.interests strong {
-    color: var(--main-color);
-}
-
-.interests a {
+.projects a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -371,10 +356,25 @@ section {
     transition: .5s;
 }
 
-.interests a:hover {
+.projects a:hover {
     background: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
+}
+
+.interests h2 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+.interests p {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0 0;
+}
+
+.interests strong {
+    color: var(--main-color);
 }
 
 /*SIZE ADJUSTMENTS*/

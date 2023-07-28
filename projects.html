@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Personal Portfolio - Talha Muhib</title>
+        
+        <!--Box icons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--Header design-->
+        <header class="header">
+            <a class = "logo" href = "#">Portfolio</a>
+            <i class='bx bx-menu' id = "menu-icon"></i>
+
+            <nav class = "navbar">
+                <a href = "index.html">Home</a>
+                <a href = "education.html">Education</a>
+                <a href = "experience.html">Experience</a>
+                <a href = "skills.html">Skills</a>
+                <a href = "#" class = "active">Projects</a>
+                <a href = "interests.html">Interests</a>
+            </nav>
+        </header>
+
+        <!--Projects section-->
+        <section class="projects" id="projects">
+            <h2 class = "heading">PROJECTS</h2>
+            <h3>I've done over 50 programming projects as an undergraduate CS student.
+                Here are just a few of them that stand out to me. For some of these projects, 
+                I cannot display the source code here due to academic integrity.
+                However, I would be happy to share the code if requested. A good portion of these projects
+                are public on my GitHub Page. (Link to GitHub is in the home page)</h3>
+            <div class="pathfinder">
+                <h3>PATH FINDING ALGORITHM VISUALIZER</h3>
+                <p>Designed an interactive program to show the visual differences in the traversals of 4 graph algorithms; 
+                    Breadth-First Search (BFS), Depth-First Search (DFS), Uniform Cost Search (UCS), and A* Search</p>
+                <ul> 
+                    <li>Created an interactive display window in Pygame; users can create a maze with start and 
+                        end points by clicking on the individual squares or dragging their cursor on the screen</li>
+                    <li>Implemented key controls to allow users to select and run/terminate an algorithm</li>
+                    <li>Added a visual of the paths the algorithms
+                        took to reach the end state and how many nodes were expanded during execution</li>
+                </ul>
+            </div>
+            <div class="pathfinder">
+                <h3>PLANETARY ORBIT SIMULATION</h3>
+                <p>Designed a 2D graphic of the approximate orbits of the planets in the solar system</p>
+                <ul> 
+                    <li>Created an interactive display in Pygame; users can choose 
+                        to see the inner planet orbits only, or the inner and outer planet orbits together</li>
+                    <li>Scaled down the exact distances (in AU) and velocities of each planet to fit their paths on a 700x700 display</li>
+                    <li>Added a visual of the approximate elliptical orbit paths taken by the planets, 
+                        along with texts showing the planet-sun distances </li>
+                </ul>
+            </div>
+            <div class="return-values">
+                <h3>MULTIPLE RETURN VALUES</h3>
+                <p>Implemented the “values” and “let-values” forms 
+                    of the Racket language to add a multiple return values feature to a subset of Racket, called Iniquity</p>
+                <ul> 
+                    <li>Extended the current parser and compiler to evaluate 
+                        a list of S-expression inputs to an abstract syntax tree (AST)</li>
+                    <li>Rewrote the compiler to handle multiple values by returning a 
+                        vector of entries and the address to the runtime system, rather than a single result</li>
+                    <li>Updated the runtime system, which was written in C, to unwrap the
+                        executed x86 result and print the values to the terminal based on Racket specifications</li>
+                </ul>
+            </div>
+            <div class="micro">
+                <h3>MICROCAML LEXER, PARSER, INTERPRETER</h3>
+                <p>Created a small scale programming language
+                    (MicroCaml) loosely based on OCaml, along with mutop, a REPL for MicroCaml</p>
+                <ul> 
+                    <li>Used OCaml regular expressions to tokenize MicroCaml expression and mutop directive input strings</li>
+                    <li>Designed a parser and interpreter to evaluate the tokenized input to an abstract syntax tree (AST),
+                        and then to a result based on a language specification modeled by a Context Free Grammar (CFG)</li>
+                    <li>Developed mutop to enable quickly evaluating expressions with persisting memory</li>
+                </ul>
+            </div>
+            <div class="engine">
+                <h3>REGULAR EXPRESSION ENGINE</h3>
+                <p>Constructed a finite state machine using OCaml to 
+                    simulate how regular expressions accept and reject input strings</p>
+                <ul> 
+                    <li>Implemented an algorithm which takes a 
+                        regular expression on input and converts it to a nondeterministic finite automata (NFA)</li>
+                    <li>Designed another algorithm to convert the NFA to a deterministic finite automata (DFA) 
+                        and allow each transition to be uniquely determined by a source state and input symbol</li>
+                    <li>Constructed a function to take an input string and pass it through the DFA to determine 
+                        if a sequence of precomputed transitions validate the string</li>
+                </ul>
+            </div>
+            <div class="bloom">
+                <h3>BLOOM FILTER</h3>
+                <p>Built a system to manage the recording of passwords that have undergone hacking attempts</p>
+                <ul> 
+                    <li>Recorded passwords and the number of hacking 
+                        attempts from the given tracefile into a dictionary as key-value pairs</li>
+                    <li>Created a safety measure for any password with hacking attempts beyond a certain threshold;
+                        the password is passed through k different hash functions and the corresponding bits 
+                        in the Bloom Filter are set to 1. A warning is given if another hack is attempted</li>
+                    <li>Designed a function to rebuild the Bloom Filter if the probability of a false positive
+                        (a new password hashing to the same bits as an existing password)
+                        is beyond a certain acceptable probability </li>
+                </ul>
+            </div>
+            <div class="kd">
+                <h3>KD-TREES</h3>
+                <p>Constructed two different binary tree 
+                    variants of a multi-dimensional data structure like a quadtree; 
+                    extended and self-balancing</p>
+                <ul> 
+                    <li>Implemented various operations to find, delete, and insert k-dimensional 
+                        points into the tree and rebalance by the current cutting dimension if necessary</li>
+                    <li>Wrote nearest neighbor queries which take a point p and a value i as inputs and 
+                        return the i points in the tree with minimum Euclidean distances to p</li>
+                    <li>Designed an orthogonal range query to find all the points in the 
+                        tree located inside a given k-dimensional bounded region</li>
+                </ul>
+            </div>
+            <div class="dynamic">
+                <h3>DYNAMIC PROGRAMMING IN HASKELL</h3>
+                <p>Created a project that shows how to use Haskell’s built-in features to solve 5 dynamic 
+                    programming problems; Fibonacci, longest subsequence, buy low sell high, rod cutting, edit string distancing</p>
+                <ul> 
+                    <li>Implemented the naive and dynamic programming versions of each problem to show the difference in runtimes</li>
+                    <li>Utilized Haskell’s lazy evaluation and monolithic 
+                        arrays to demonstrate two dynamic programming approaches to each problem</li>
+                    <li>Used QuickCheck to generate large randomized tests 
+                        for every problem and demonstrate correctness of the implementations</li>
+                </ul>
+            </div>
+            <div class="pacman">
+                <h3>MULTI-AGENT SEARCHING</h3>
+                <p>Constructed adversarial agents for the 
+                    classic Pacman game through various search algorithms and evaluation functions</p>
+                <ul> 
+                    <li>Designed a reflex agent to determine the optimal
+                        immediate action to take by considering the locations of food pellets and ghosts</li>
+                    <li>Constructed a minimax game tree which considers the 
+                        strategies of the ghosts (minimizer agents) and Pacman (maximizer agent) </li>
+                    <li>Created an agent that uses alpha-beta pruning to speed up exploration of the minimax tree</li>
+                </ul>
+            </div>
+            <div class="learning">
+                <h3>REINFORCEMENT LEARNING</h3>
+                <p>Implemented a series of reinforcement learning techniques for a simulated robot controller and Pacman</p>
+                <ul> 
+                    <li>Wrote 3 agents which take MDPs on construction and run 3 different value iteration algorithms 
+                        for computing optimal policies of states; asynchronous, batch, and prioritized sweeping</li>
+                    <li>Constructed Q-learning and approximate Q-learning agents which 
+                        learn by trial and error through interactions with their environments</li>
+                    <li>Implemented an epsilon-greedy selection where the Q-learning agent takes a random 
+                        action an epsilon fraction of the time to increase exploration, otherwise following its current best Q-values</li>
+                </ul>
+            </div>
+            <div class="orders">
+                <h3>ORDERS PROCESSOR</h3>
+                <p>Designed a Java multithreaded system to allow clients to buy items of their request if they are in stock</p>
+                <ul> 
+                    <li>Parsed through given text files to get client IDs, the number of requested items, and the cost of each item</li>
+                    <li>Added synchronization to disallow multiple threads from simultaneously gaining access to shared resources; 
+                        client orders, setting item prices, clients adding items to their carts, etc.</li>
+                    <li>Wrote a summary of hundreds of client orders to a text file once all threads have terminated</li>
+                </ul>
+            </div>
+
+            <a href = "#projects"><i class='bx bx-up-arrow-alt' ></i></a>
+        </section>
+
+        <!--Custom JS-->
+        <script src = "script.js"></script>
+    </body>
+
+</html>

@@ -7,11 +7,11 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+//let sections = document.querySelectorAll('section');
+//let navLinks = document.querySelectorAll('header nav a');
 
 //Whenever we scroll
-window.onscroll = () => {
+/*window.onscroll = () => {
     //Highlighting the active section
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -31,4 +31,4 @@ window.onscroll = () => {
     //Close navbar when screen starts scrolling
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
-};
+};*/
