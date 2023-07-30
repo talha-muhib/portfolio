@@ -362,6 +362,10 @@ section {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
+.projects video {
+    margin: 2rem 0 0 0;
+}
+
 .interests h2 {
     font-size: 4.5rem;
     font-weight: 800;
