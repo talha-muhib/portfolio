@@ -49,7 +49,7 @@
 
                 <video autoplay muted loop src="A_star.mp4" width="600"></video>
             </div>
-            <div class="pathfinder">
+            <div class="orbits">
                 <h3>PLANETARY ORBIT SIMULATION</h3>
                 <p>Designed a 2D graphic of the approximate orbits of the planets in the solar system</p>
                 <ul> 
@@ -61,6 +61,34 @@
                 </ul>
 
                 <video autoplay muted loop src="orbit.mp4" width="600"></video>
+            </div>
+            <div class="pacman">
+                <h3>MULTI-AGENT SEARCHING</h3>
+                <p>Constructed adversarial agents for the 
+                    classic Pacman game through various search algorithms and evaluation functions</p>
+                <ul> 
+                    <li>Designed a reflex agent to determine the optimal
+                        immediate action to take by considering the locations of food pellets and ghosts</li>
+                    <li>Constructed a minimax game tree which considers the 
+                        strategies of the ghosts (minimizer agents) and Pacman (maximizer agent) </li>
+                    <li>Created an agent that uses alpha-beta pruning to speed up exploration of the minimax tree</li>
+                </ul>
+
+                <video autoplay muted loop src="multi-agent.mp4" width="600"></video>
+            </div>
+            <div class="learning">
+                <h3>REINFORCEMENT LEARNING</h3>
+                <p>Implemented a series of reinforcement learning techniques for a simulated robot controller and Pacman</p>
+                <ul> 
+                    <li>Wrote 3 agents which take MDPs on construction and run 3 different value iteration algorithms 
+                        for computing optimal policies of states; asynchronous, batch, and prioritized sweeping</li>
+                    <li>Constructed Q-learning and approximate Q-learning agents which 
+                        learn by trial and error through interactions with their environments</li>
+                    <li>Implemented an epsilon-greedy selection where the Q-learning agent takes a random 
+                        action an epsilon fraction of the time to increase exploration, otherwise following its current best Q-values</li>
+                </ul>
+
+                <video autoplay muted loop src="manual-learning.mp4" width="600"></video>
             </div>
             <div class="return-values">
                 <h3>MULTIPLE RETURN VALUES</h3>
@@ -139,30 +167,6 @@
                         arrays to demonstrate two dynamic programming approaches to each problem</li>
                     <li>Used QuickCheck to generate large randomized tests 
                         for every problem and demonstrate correctness of the implementations</li>
-                </ul>
-            </div>
-            <div class="pacman">
-                <h3>MULTI-AGENT SEARCHING</h3>
-                <p>Constructed adversarial agents for the 
-                    classic Pacman game through various search algorithms and evaluation functions</p>
-                <ul> 
-                    <li>Designed a reflex agent to determine the optimal
-                        immediate action to take by considering the locations of food pellets and ghosts</li>
-                    <li>Constructed a minimax game tree which considers the 
-                        strategies of the ghosts (minimizer agents) and Pacman (maximizer agent) </li>
-                    <li>Created an agent that uses alpha-beta pruning to speed up exploration of the minimax tree</li>
-                </ul>
-            </div>
-            <div class="learning">
-                <h3>REINFORCEMENT LEARNING</h3>
-                <p>Implemented a series of reinforcement learning techniques for a simulated robot controller and Pacman</p>
-                <ul> 
-                    <li>Wrote 3 agents which take MDPs on construction and run 3 different value iteration algorithms 
-                        for computing optimal policies of states; asynchronous, batch, and prioritized sweeping</li>
-                    <li>Constructed Q-learning and approximate Q-learning agents which 
-                        learn by trial and error through interactions with their environments</li>
-                    <li>Implemented an epsilon-greedy selection where the Q-learning agent takes a random 
-                        action an epsilon fraction of the time to increase exploration, otherwise following its current best Q-values</li>
                 </ul>
             </div>
             <div class="orders">
