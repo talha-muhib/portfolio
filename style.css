@@ -213,34 +213,20 @@ section {
     color: var(--main-color);
 }
 
-.carsxe h3 {
+.jobs {
+    margin: 1rem 0 4rem 0;
+}
+
+.jobs h3 {
     font-size: 1.8rem;
     color: var(--main-color);
 }
 
-.carsxe h4 {
+.jobs h4 {
     font-size: 1.3rem;
 }
 
-.carsxe ul li {
-    margin: 1rem 0 0 1.5rem;
-    font-size: 1.2rem;
-}
-
-.ta {
-    margin: 4rem 0 0 0;
-}
-
-.ta h3 {
-    font-size: 1.8rem;
-    color: var(--main-color);
-}
-
-.ta h4 {
-    font-size: 1.3rem;
-}
-
-.ta ul li {
+.jobs ul li {
     margin: 1rem 0 0 1.5rem;
     font-size: 1.2rem;
 }
